@@ -1,0 +1,69 @@
+Arguments: 
+  /usr/local/Cellar/node@10/10.22.1/bin/node /usr/local/Cellar/yarn/1.22.5/libexec/bin/yarn.js add express appollo-server-express graphql type-graphql
+
+PATH: 
+  /usr/local/opt/node@10/bin:/Users/alaa/node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Users/alaa/Users/alaa/Library/Android/sdk/emulator:/Users/alaa/Users/alaa/Library/Android/sdk/tools:/Users/alaa/Users/alaa/Library/Android/sdk/tools/bin:/Users/alaa/Users/alaa/Library/Android/sdk/platform-tools:/usr/local/mysql/bin/
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  10.22.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npmjs.org/appollo-server-express: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.5/libexec/lib/cli.js:66988:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.22.5/libexec/lib/cli.js:140749:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.5/libexec/lib/cli.js:141721:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.5/libexec/lib/cli.js:141643:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1145:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "reddit-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "watch": "tsc -w",
+      "start": "node dist/index.js",
+      "dev": "nodemon dist/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@mikro-orm/cli": "4.0.7",
+      "@mikro-orm/core": "4.0.7",
+      "@mikro-orm/migrations": "4.0.7",
+      "@mikro-orm/postgresql": "4.0.7",
+      "@types/node": "14.11.2",
+      "pg": "8.3.3",
+      "typescript": "4.0.3"
+    },
+    "devDependencies": {
+      "nodemon": "2.0.4",
+      "ts-node": "9.0.0"
+    },
+    "mikro-orm": {
+      "useTsNode": true,
+      "configPaths": [
+        "./src/mikro-orm.config.ts",
+        "./dist/mikro-orm.config.js"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
