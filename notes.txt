@@ -1,0 +1,11 @@
+[] - npm init -y  => to create the package.json
+
+[] -  npx tsconfig.json => automatically create the tsconfig file for your project
+      (You can choose weither you want the settings for 'react, react-native, node')
+      in this project i choose node
+
+[] - yarn add -D ts-node =>  It allows you to run TypeScript in Node.js directly,
+     without having to run the files through the TypeScript compiler (tsc).
+
+[] - ts-node is relatively slow and does not run in the production env, that's why is better to use the watch command
+
